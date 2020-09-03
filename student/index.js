@@ -9,7 +9,7 @@
 
 function invert(array) {
   return array.map(number=>(
-      number>0?-number:number
+      number>0?-number:number - (2*number)
   ))
 }
 
