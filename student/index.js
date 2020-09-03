@@ -8,7 +8,9 @@
 // You can assume that all values are integers. Do not mutate the input array/list.
 
 function invert(array) {
-  // TODO 
+  return array.map(number=>(
+      number>0?-number:number
+  ))
 }
 
 
@@ -27,10 +29,16 @@ function invert(array) {
 
 // The correct answer would be 17.
 
-function countSheeps(arrayOfSheep) {
-  // TODO 
-}
 
+
+function countSheeps(arrayOfSheep) {
+let output = 0;
+ arrayOfSheep.filter(sheep=>{
+    return sheep===true?output+=sheep:false;
+ })
+return output;
+
+}
 
 // 3)
 // Number of people in the bus
